@@ -449,36 +449,52 @@ public class MainFrame extends JFrame {
      */
     private String getAboutContent() {
         return """
-            <html>
-            <body style="font-family: Segue UI, Arial, sans-serif; font-size: 13px; padding: 15px;">
-            <div style="text-align: center; border-bottom: 2px solid #3498db; padding-bottom: 15px;">
-                <h1 style="color: #2c3e50; font-size: 28px; margin: 0;">\uD83C\uDFCB️ Gym Management System</h1>
-                <p style="color: #7f8c8d; font-size: 14px; margin: 5px 0 0 0;">Version 1.0</p>
-            </div>
-            <div style="padding: 15px 0;">
-                <h3 style="color: #2c3e50; margin: 0 0 5px 0;">Developer</h3>
-                <p style="margin: 0 0 15px 0; color: #34495e;">Sabin</p>
-                <h3 style="color: #2c3e50; margin: 0 0 5px 0;">Description</h3>
-                <p style="margin: 0 0 15px 0; color: #34495e;">
-                    A complete gym member management solution for fitness centers, gyms, and health clubs.
-                </p>
-                <h3 style="color: #2c3e50; margin: 0 0 5px 0;">Key Features</h3>
-                <ul style="color: #34495e; margin: 0 0 15px 0; padding-left: 20px;">
-                    <li><b>Member Management:</b> Add, edit, and manage Regular and Premium members</li>
-                    <li><b>Attendance Tracking:</b> Mark daily attendance and earn loyalty points</li>
-                    <li><b>Plan Upgrades:</b> Basic → Standard → Deluxe</li>
-                    <li><b>Payment Processing:</b> Record payments, track dues, and calculate discounts</li>
-                    <li><b>Soft Delete:</b> Remove and restore members</li>
-                    <li><b>Data Persistence:</b> Save and load member data</li>
-                </ul>
-            </div>
-            <hr style="border: 1px solid #ecf0f1;">
-            <div style="text-align: center; padding: 10px 0 0 0;">
-                <p style="color: #7f8c8d; font-size: 11px; margin: 0;">&copy; 2026 All rights reserved.</p>
-            </div>
-            </body>
-            </html>
-            """;
+        <html>
+        <body style="font-family: Segoe UI, Arial, sans-serif; font-size: 13px; padding: 15px; width: 380px;">
+        <div style="text-align: center; border-bottom: 2px solid #3498db; padding-bottom: 15px;">
+            <h1 style="color: #2c3e50; font-size: 26px; margin: 0;">\uD83C\uDFCB\uFE0F Gym Management System</h1>
+            <p style="color: #7f8c8d; font-size: 13px; margin: 5px 0 0 0;">Version 1.0</p>
+            <p style="color: #95a5a6; font-size: 11px; margin: 2px 0 0 0;">Desktop Member Management Solution</p>
+        </div>
+
+        <div style="padding: 15px 0;">
+            <h3 style="color: #2c3e50; margin: 0 0 5px 0;">Developer</h3>
+            <p style="margin: 0 0 15px 0; color: #34495e;">Sabin</p>
+
+            <h3 style="color: #2c3e50; margin: 0 0 5px 0;">Description</h3>
+            <p style="margin: 0 0 15px 0; color: #34495e;">
+                A complete gym member management solution for fitness centers, gyms, and health clubs.
+                Built with a clean layered architecture to keep member data, business rules, and the
+                user interface cleanly separated.
+            </p>
+
+            <h3 style="color: #2c3e50; margin: 0 0 5px 0;">Key Features</h3>
+            <ul style="color: #34495e; margin: 0 0 15px 0; padding-left: 20px;">
+                <li><b>Member Management:</b> Add, edit, and manage Regular and Premium members</li>
+                <li><b>Attendance Tracking:</b> Mark daily attendance and earn loyalty points
+                    (+5 Regular / +10 Premium per visit)</li>
+                <li><b>Plan Upgrades:</b> Basic &rarr; Standard &rarr; Deluxe, unlocked after
+                    30 visits with dues fully paid</li>
+                <li><b>Payment Processing:</b> Record partial or full payments, track dues, and
+                    apply a 10% discount for Premium members on full payment</li>
+                <li><b>Soft Delete:</b> Remove members with a reason and restore them later</li>
+                <li><b>Filter Views:</b> Switch between Active, Removed, and All members</li>
+                <li><b>Data Persistence:</b> Save and load member data to and from CSV</li>
+            </ul>
+
+            <h3 style="color: #2c3e50; margin: 0 0 5px 0;">Built With</h3>
+            <p style="margin: 0 0 15px 0; color: #34495e;">
+                Java 25 &middot; Swing &middot; MVC Architecture &middot; CSV Persistence
+            </p>
+        </div>
+
+        <hr style="border: 1px solid #ecf0f1;">
+        <div style="text-align: center; padding: 10px 0 0 0;">
+            <p style="color: #7f8c8d; font-size: 11px; margin: 0;">&copy; 2026 Sabin. All rights reserved.</p>
+        </div>
+        </body>
+        </html>
+        """;
     }
 
     // ========== Public Methods ==========
